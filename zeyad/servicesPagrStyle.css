@@ -1,0 +1,174 @@
+
+#one{
+  padding:    16px 0px 0px 7px;
+  background-color: #ffffff;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+width: calc(952px);}
+#box{
+
+    padding:    137px 68px 0px 57px;
+    background-color: #c8cad1;
+    font-size: 17px;
+
+}
+#box :hover{
+
+    width: calc(1000px);
+
+}
+.two{
+
+    margin:10px
+   
+
+}
+.three{
+ 
+    margin:10px
+
+
+}
+.checked {
+    color: orange;
+  }
+
+ :root{
+    --mainclr:#0e1a60;
+    --secclr:#ff5d22;
+    --third:#DFE4E0;
+    --mainafterclr:hsl(167, 81%, 79%);
+}
+*{
+   
+    position: relative;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+html{
+    font-size: 65%;
+    
+}  
+.header{
+    padding: 1rem 7%;
+    background-color: var(--mainclr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header #logo{
+    width: 55px;
+}
+.navbar a{
+    color: white;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    position: relative;
+  
+}
+.navbar a:hover{
+    size: 30px;
+    color:#ff5d22;
+    transition: 0.6s;
+    }
+
+/* .icons div{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: white;
+    display: none;
+}
+.icons a{
+    color: white;
+    background: var(--secclr);
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: .5s;
+}
+.icons a:hover{
+    background: transparent;
+    border: 1px solid var(--secclr);
+} */
+/* .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+} */
+
+/* -------------background section------------------ */
+
+
+
+/* -------------end background section------------------ */
+
+.background{
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100vh;
+
+} 
+
+@media (max-width:767px) {
+
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    .icons div{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--secclr);
+        display: flex;
+        
+        align-items: center;
+        flex-direction: column;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+
+    
+    .navbar a{
+        display: block;
+        font-size: 3rem;
+        font-weight: bolder;
+        margin: 1rem;
+        padding: 1rem;
+        color: black;
+    }
+    .background-content{
+        
+        width: 100%;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%, -50%);
+       padding-left: 5rem;
+    }
+    .inner-about .inner-about-image img{
+        margin-top: 20px;
+    }
+
+    .right-service-content{
+       
+        justify-content: flex-start;
+    
+    }
+
+
+
+
+} 
